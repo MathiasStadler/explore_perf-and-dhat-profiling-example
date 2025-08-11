@@ -47,13 +47,26 @@ test tests::bench_read_csv ... ok
 test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.07s
 ```
 <!-- keep the format -->
-## install crates hyperfine
+## Consider adding `cargo-features = ["strip"]` to the manifest
+
+cargo -Z strip
+
+HIER WEITER
+
+## Install crates hyperfine
 <!-- -->
 ```bash <!-- markdownlint-disable-line code-block-style -->
-
+> cargo install hyperfine
 >  hyperfine "target/debug/perf-and-dhat-profiling-example"
 ```
 <!-- keep the format -->
+<!-- keep the format -->
+## Run hyperfine
+<!-- -->
+```bash <!-- markdownlint-disable-line code-block-style -->
+> hyperfine "target/debug/perf-and-dhat-profiling-example"
+```
+
 >[NOTE!]
 >A double dash (--) is used in most Bash built-in commands and many other commands
 >to signify the end of command options, after which only positional ("non-option")
