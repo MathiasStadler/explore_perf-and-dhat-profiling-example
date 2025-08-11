@@ -6,6 +6,8 @@
 
 -explore rust perf and dhat
 
+## see project_path.md [![alt text][1]](project_path.md)
+
 <!-- keep the format -->
 >[!NOTE]
 >Symbol to mark web external links [![alt text][1]](./README.md)
