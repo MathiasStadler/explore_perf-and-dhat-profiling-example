@@ -4,7 +4,7 @@
 
 ## Motivation
 
--explore rust perf and dhat
+-explore rust perf and dhat with this article [![alt text][1]](https://www.justanotherdot.com/posts/profiling-with-perf-and-dhat-on-rust-code-in-linux.html)
 
 ## see project_path.md [![alt text][1]](project_path.md)
 

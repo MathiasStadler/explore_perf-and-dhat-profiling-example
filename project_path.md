@@ -47,8 +47,54 @@ test tests::bench_read_csv ... ok
 test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.07s
 ```
 <!-- keep the format -->
+## install crates hyperfine
+<!-- -->
+```bash <!-- markdownlint-disable-line code-block-style -->
+
+>  hyperfine "target/debug/perf-and-dhat-profiling-example"
+```
+<!-- keep the format -->
+>[NOTE!]
+>A double dash (--) is used in most Bash built-in commands and many other commands
+>to signify the end of command options, after which only positional ("non-option")
+>arguments are accepted. [![alt text][1]](https://unix.stackexchange.com/questions/11376/what-does-double-dash-double-hyphen-mean/11382#11382)
+<!-- keep the format -->
+>[TIP!]
+>cargo install --list :: list all already installed packages and their versions system wide in this context
+<!-- -->
+>```bash <!-- markdownlint-disable-line code-block-style -->
+>cargo install --list --help 2>&1 | grep -- -list
+>   --list                      list all installed packages and their versions
+>  
+>```
+<!-- keep the format -->
+## install crates temp
+<!-- -->
+```bash <!-- markdownlint-disable-line code-block-style -->
+> 
+```
+<!-- keep the format -->
 >[!NOTE]
 >Symbol to mark web external links [![alt text][1]](./README.md)
+<!-- -->
+>[!TIP]
+>Marker
+<!-- -->
+TODO: Test todo
+<!-- -->
+FIXME:
+<!-- -->
+BUG:
+<!-- -->
+NOTE:
+<!-- -->
+HACK:
+<!-- -->
+[ ]:<!-- -->
+<!-- -->
+[x]:
+<!-- -->
+HACK:
 <!-- -->
 <!-- Link sign - Don't Found a better way :-( - You know a better method? - send me a email -->
 [1]: ./img/link_symbol.svg
