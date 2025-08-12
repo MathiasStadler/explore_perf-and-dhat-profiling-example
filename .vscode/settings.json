@@ -1,8 +1,10 @@
 {
     "cSpell.words": [
         "clippy",
+        "codegen",
         "debuginfo",
         "dhat",
+        "flamegraph",
         "rustup",
         "trapapa",
         "unittests",

@@ -47,11 +47,51 @@ test tests::bench_read_csv ... ok
 test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.07s
 ```
 <!-- keep the format -->
+
+>[NOTE!]
+>How to switch between Rust toolchains? [![alt text][1]](https://stackoverflow.com/questions/58226545/how-to-switch-between-rust-toolchains) [![alt text][1]](https://de.linux-console.net/?p=32248)
+<!-- keep the format -->
+>>List already installed toolchain
+<!-- keep the format -->
+```bash <!-- markdownlint-disable-line code-block-style -->
+# list all installed toolchain
+rustup toolchain list
+```
+<!-- keep the format -->
+>> show which toolchain is active
+<!-- keep the format -->
+```bash <!-- markdownlint-disable-line code-block-style -->
+# show active toolchain
+rustup show |sed -n '/active toolchain/,/^$/p'
+```
+<!-- keep the format -->
+>>Switch the/to toolchain
+<!-- keep the format -->
+```bash <!-- markdownlint-disable-line code-block-style -->
+# nightly
+rustup override set nightly
+# or
+rustup override set nightly-x86_64-unknown-linux-gnu
+# stable
+rustup override set stable
+# or
+rustup override set stable-x86_64-unknown-linux-gnu
+# another custom installed toolchain
+rustup override set nightly-2021-07-10-x86_64-unknown-linux-gnu
+
+```
+<!-- -->
 ## Consider adding `cargo-features = ["strip"]` to the manifest
 
+[TODO!]
 cargo -Z strip
 
-HIER WEITER
+>cargo install --list
+flamegraph v0.6.8:
+    cargo-flamegraph
+    flamegraph
+
+RUSTFLAGS="-C target-cpu=native"
 
 ## Install crates hyperfine
 <!-- -->
@@ -59,7 +99,6 @@ HIER WEITER
 > cargo install hyperfine
 >  hyperfine "target/debug/perf-and-dhat-profiling-example"
 ```
-<!-- keep the format -->
 <!-- keep the format -->
 ## Run hyperfine
 <!-- -->
