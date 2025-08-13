@@ -5,6 +5,7 @@
         "debuginfo",
         "dhat",
         "flamegraph",
+        "RUSTFLAGS",
         "rustup",
         "trapapa",
         "unittests",

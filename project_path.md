@@ -33,7 +33,7 @@ info: downloading component 'clippy'
 }
 ```
 <!-- keep the format -->
-## run test
+## Run test
 <!-- -->
 ```bash <!-- markdownlint-disable-line code-block-style -->
 > cargo test
@@ -45,6 +45,21 @@ running 1 test
 test tests::bench_read_csv ... ok
 
 test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.07s
+```
+<!-- keep the format -->
+## Run cargo flamegraph
+<!-- keep the format -->
+>[NOTE!]
+>Make sure that  kernel.perf_event_paranoid level  on 0
+><!-- keep the format -->
+> - check **sudo sysctl kernel.perf_event_paranoid**
+> - set **sudo sysctl kernel.perf_event_paranoid=0**
+> - check again :-)
+<!-- keep the format -->
+- as default user without root privileges
+<!-- -->
+```bash <!-- markdownlint-disable-line code-block-style -->
+CARGO_PROFILE_RELEASE_DEBUG=true cargo flamegraph --bin explore_perf-and-dhat-profiling-example
 ```
 <!-- keep the format -->
 

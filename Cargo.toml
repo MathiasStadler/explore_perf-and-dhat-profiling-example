@@ -1,5 +1,6 @@
 [package]
-name = "perf-and-dhat-profiling-example"
+# name = "perf-and-dhat-profiling-example"
+name = "explore_perf-and-dhat-profiling-example"
 version = "0.1.0"
 edition = "2018"
 
